@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&display=swap');
+body {
+ background-color:hsl(210, 60%, 98%);
+}
+*{
+ padding: 0;
+ margin: 0;
+ box-sizing: border-box;
+ font-family: "Plus Jakarta Sans";
+}
+
+.main-container {
+ width: 570px;
+ margin: 20px auto;
+ padding: 30px;
+ background-color: hsl(0, 0%, 100%);
+ border-radius: 10px;
+}
+
+.top {
+ display: flex;
+ justify-content: space-between;
+
+ margin-bottom: 20px;
+}
+
+.notify{
+ font-weight: 900;
+  color: hsl(224, 21%, 14%);
+}
+
+.count {
+ background-color: hsl(219, 85%, 26%);
+ color: hsl(0, 0%, 100%);
+ padding: 0 8px;
+ font-size: 14px;
+ border-radius: 4px;
+ font-weight: 500;
+ margin-left: 10px;
+ 
+}
+
+.read {
+ font-size: 14px;
+ color: hsl(224, 21%, 14%);
+}
+
+.read:hover,
+.react:hover,
+.name:hover,
+.club:hover{
+ font-weight: 800;
+ cursor: pointer;
+ color: hsl(219, 85%, 26%);
+}
+
+.notification-box {
+ display: flex;
+ align-items: center;
+ padding: 10px;
+ margin-bottom: 5px;
+}
+.name {
+ color: hsl(224, 21%, 14%);
+ font-weight: 700;
+ font-size: 14px;
+ padding-right: 5px;
+}
+
+.avatar {
+ margin-right: 10px;
+}
+
+.avatar img {
+ width: 50px;
+}
+
+.content p {
+ font-size: 12px;
+}
+
+.react{
+ text-decoration: none;
+ font-weight: 600;
+ color: hsl(224, 21%, 14%);
+}
+
+.club {
+ color: hsl(224, 21%, 14%);
+ font-weight: 700;
+ text-decoration: none;
+}
+.time{
+ font-size: 12px;
+}
+
+.img{
+ margin-left: auto;
+
+}
+
+.messages{
+ align-items: flex-start;
+ 
+}
+
+.message-content {
+ margin-top: 10px;
+ border: 1px solid hsl(205, 33%, 90%);
+ padding: 10px;
+ 
+}
+
+.message-content:hover {
+ background-color: hsl(210, 60%, 98%);
+}
+
+.message-content a {
+ font-weight: 500;
+ color: hsl(224, 21%, 14%);
+ text-decoration: none;
+}
+
+.img img{
+ width: 50px;
+}
+
+.new-message{
+ background-color:hsl(210, 60%, 98%);
+ border-radius: 8px;
+}
+
+.new-message .content p::after {
+ content: '\25CF';
+ margin-left: 5px;
+ color: red;
+ /* background-color: hsl(1, 90%, 64%);
+ width: 10px;
+ height: 10px; */
+ 
+}
+.attribution { 
+ font-size: 11px; 
+ text-align: center; 
+}
+.attribution a { 
+ color: hsl(228, 45%, 44%); 
+}
+
+@media(max-width: 426px){
+ body{
+  background-color: hsl(0, 0%, 100%);
+ }
+ .main-container{
+  margin: 0;
+  width: 100%;
+  padding: 15px;
+ }
+}
+ 
